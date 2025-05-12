@@ -4,9 +4,9 @@ use Elecena\Utils\PackageInfo;
 use PHPUnit\Framework\TestCase;
 
 /**
- * Set of integration tests for ParametersParser class
+ * Set of integration tests for the PackageInfo class.
  */
-class ParametersParserTest extends TestCase {
+class PackageInfoTest extends TestCase {
 
 	/**
 	 * @param string $desc
@@ -21,7 +21,7 @@ class ParametersParserTest extends TestCase {
 	/**
 	 * @return array
 	 */
-	public function getPackageProvider() {
+	public static function getPackageProvider() {
 		return [
 			[ 'foo', false ],
 
