@@ -1,6 +1,7 @@
 /vendor/
 composer.phar
 *.swp
+.idea
 
 .coverage.xml
 .coverage/
