@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!-- https://docs.phpunit.de/en/10.5/configuration.html -->
 <phpunit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:noNamespaceSchemaLocation="https://schema.phpunit.de/10.1/phpunit.xsd"
          backupGlobals="false"
          backupStaticProperties="false"
          bootstrap="vendor/autoload.php"
-         cacheDirectory=".phpunit.cache"
+         cacheDirectory=".phpunit.result.cache"
          colors="true"
          displayDetailsOnPhpunitDeprecations="true"
          displayDetailsOnTestsThatTriggerWarnings="true">
@@ -13,10 +14,14 @@
             <directory>./tests/</directory>
         </testsuite>
     </testsuites>
-    <coverage />
+
+    <coverage includeUncoveredFiles="true">
+    </coverage>
+
+    <!-- This is used to restrict code coverage analysis and reporting of deprecations, notices, and warnings to your own code -->
     <source>
         <include>
-            <directory suffix=".php">src/</directory>
+            <directory suffix=".php">./src</directory>
         </include>
     </source>
 </phpunit>
