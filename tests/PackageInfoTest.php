@@ -441,6 +441,9 @@ class PackageInfoTest extends TestCase {
 			[ '16-TSSOP', 'TSSOP16' ],
 			[ '144-LQFP', 'LQFP144' ],
 			[ '64-LQFP', 'LQFP64' ],
+			// https://github.com/elecena/ic-package-info/issues/58
+			[ 'IC BUF NON-INVERT 5.25V SOIC14', 'SOIC14' ],
+			[ 'IC BUF NON-INVERT 5.25V 14SOIC', 'SOIC14' ],
 
 			// normalize packages
 			[ '64-LQFP (10x10)', 'LQFP64' ], // https://elecena.pl/product/7840023/atsam3n1bb-aur (DigiKey)

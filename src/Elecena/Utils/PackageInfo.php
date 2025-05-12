@@ -23,7 +23,7 @@ class PackageInfo {
 	 * @param string $desc
 	 * @return string|false
 	 */
-	public static function getPackage($desc) {
+	public static function getPackage(string $desc): bool|string {
 		$package = false;
 		$desc = mb_strtoupper($desc);
 
@@ -37,7 +37,10 @@ class PackageInfo {
 		$desc = preg_replace('#(\d+) LD ([A-Z]+)#', '$1-$2', $desc);
 
 		// "swap" package signatures / 64-LQFP -> LQFP64
-		$desc = preg_replace('#(\d{1,})-\s?([2A-Z]{3,})#', '$2$1', $desc);
+		$desc = preg_replace('#(\d+)-\s?([2A-Z]{3,})#', '$2$1', $desc);
+
+		// "swap" package signatures / 14SOIC -> SOIC14
+		$desc = preg_replace('#\s(\d+)([2A-Z]{3,})#', ' $2$1', $desc);
 
 		// DIP 6 -> DIP-6
 		$desc = preg_replace('#(\b(DIP|ZIP))\s([1-9]\d?)#', '$1-$3', $desc);
@@ -167,7 +170,7 @@ class PackageInfo {
 			// for normalization
 			'SC-?67',
 		];
-		$pattern = '#(^|-|,|:|\s|$|\[|\(|/)(' . join('|', $groups) . ')(\)|\]|;|,|=|\s|/|$)#';
+		$pattern = '#(^|-|,|:|\s|$|\[|\(|/)(' . join('|', $groups) . ')(\)|]|;|,|=|\s|/|$)#';
 
 		if (preg_match(
 			$pattern,
@@ -315,9 +318,9 @@ class PackageInfo {
 				$package = $normalizations[$package];
 			}
 		}
-		else {
-			# var_dump(__METHOD__, $desc, $package); // debug
-		}
+//		else {
+//			var_dump(__METHOD__, $desc, $package); // debug
+//		}
 		return $package;
 	}
 }
