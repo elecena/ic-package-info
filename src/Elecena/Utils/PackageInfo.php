@@ -87,7 +87,8 @@ class PackageInfo {
 			// http://www.topline.tv/DO.html
 			'SOD-?(27|57|61|64|66|68|80|81|83|87|88|89|91|107|118|119|121|125)',
 			// SOD323 / http://www.nxp.com/packages/SOD323
-			'SOD-?(323|523)F?',
+			// SOD-123, SOD-323, SOD-523 and SOD-923 / https://en.wikipedia.org/wiki/Small_Outline_Diode
+			'SOD-?([1-9]23)-?(F|FL)?',
 			'SC-?(90|59A)',
 			'TO-?236AA',
 			//  Quad Flat No-leads package / https://en.wikipedia.org/wiki/Quad_Flat_No-leads_package#Variants / http://anysilicon.com/ultimate-guide-qfn-package/
