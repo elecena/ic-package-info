@@ -338,6 +338,8 @@ class PackageInfoTest extends TestCase {
 			[ 'MPS9805* TO202-1 NPN 65V 0.1A 0.5W =BC107', 'TO-202-1' ],
 			[ 'X0403DF ST 96+ TO202-3', 'TO-202-3' ],
 
+			// https://en.wikipedia.org/wiki/Small_Outline_Diode
+			[ 'Dioda prostownicza SMD standardowa 1000V 1A obudowa SOD-123FL', 'SOD123FL'],
 			[ '0603/SOD-523F', 'SOD523F' ],
 			[ '1005/SOD-323F', 'SOD323F' ],
 			[ 'SOD323F (SC-90)', 'SOD323F' ],
