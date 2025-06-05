@@ -60,7 +60,8 @@ class PackageInfo {
 			// https://en.wikipedia.org/wiki/TO-92
 			'TO-?92(-3)?',
 			// https://en.wikipedia.org/wiki/TO-220
-			'I?TO-?220(AB|AC|F|FP|SG|-3|-5|ISO|-ISO)?',
+			// https://www.infineon.com/cms/en/product/packages/PG-TO220/
+			'I?TO-?220(AB|AC|F|FP|SG|F?[-/][2-7]C?|ISO|-ISO)?',
 			'TOP-?(3)',
 			// If more heat needs to be dissipated, devices in the also widely used TO-247 (or TO-3P) package can be selected / TO-3PF variant a slightly lower one / SOT429: TO-247
 			// TO-3PN - https://easyeda.com/teeler123/component/TO_3PN-89Fb5nhzt
@@ -296,12 +297,19 @@ class PackageInfo {
 				'MMB' => 'MELF',
 				'MMU' => 'MicroMELF',
 
+				// http://www.irf.com/part/55V-DUAL-N-CHANNEL-DIGITAL-AUDIO-HEXFET-POWER-MOSFET-IN-A-TO-220-FULL-PAK-ISO-PACKAGE/_/A~IRFI4024H-117P
+				'TO-220ISO' => 'TO-220 Full-Pak',
+				'TO-2202' => 'TO-220-2',
+				'TO-2203' => 'TO-220-3',
+				'TO-2204' => 'TO-220-4',
+				'TO-2205' => 'TO-220-5',
+				'TO-2206' => 'TO-220-6',
+				'TO-2207' => 'TO-220-7',
+				'TO-220F4' => 'TO-220F-4',
+
 				// Pentawatt
 				'PENTAWATTV' => 'PENTAWATT-V',
 				'TO-220-5' => 'PENTAWATT',
-
-				// http://www.irf.com/part/55V-DUAL-N-CHANNEL-DIGITAL-AUDIO-HEXFET-POWER-MOSFET-IN-A-TO-220-FULL-PAK-ISO-PACKAGE/_/A~IRFI4024H-117P
-				'TO-220ISO' => 'TO-220 Full-Pak',
 
 				// TO-206-AA
 				// @see https://en.wikipedia.org/wiki/TO-18
