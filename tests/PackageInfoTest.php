@@ -39,6 +39,15 @@ class PackageInfoTest extends TestCase {
 			[ '7806CV 1,5A TO220(Single Gauge=0.6mm) * Liczba w opakowaniu:50 * Obudowa:TO220SG=0.6mm', 'TO-220SG' ],
 			[ 'DIODE ARRAY SCHOTTKY 45V ITO220', 'ITO-220' ],
 			[ 'Tranzystor 2SC5171 NPN, obudowa TO-220-3 Vce - 180V Ic - 2A para komplementarna z tranzystorem 2SA1930', 'TO-220-3' ],
+			[ 'Tranzystor 2SC5171 NPN, obudowa TO-220-3 Vce - 180V Ic - 2A para komplementarna z tranzystorem 2SA1930', 'TO-220-3' ],
+
+			[ 'KIA-78R05-PI TO-220F-4 ISO STABILIZATOR', 'TO-220F-4' ],
+			[ '5pcs KIA278R12 TO220F-4 278R12 TO220-4 KIA278R12PI TO-220F', 'TO-220F-4' ],
+			[ 'KA-78R05F TO-220-4 ISO STABILIZATOR', 'TO-220-4' ],
+			[ '5V 1A 78R05 (=KIA278R05) TO-220/4 IZOLOWANY STABILIZATOR Z RESETEM', 'TO-220-4' ],
+			[ 'LM2595T-12 TO-220-5 2pcs', 'PENTAWATT' ],
+			[ 'TOP-258-YN TO-220/6 UKŁAD', 'TO-220-6' ],
+			[ 'UKŁAD SCALONY TOP258YN TO220-7C , 6PIN', 'TO-220-7C' ],
 
 			[ 'Triak BT136X-800 4A/800V/70mA TO220ISO', 'TO-220 Full-Pak' ],
 			[' 2SC4234 Tranzystor NPN 1200V 3A 45W 8MHz TO220-ISO', 'TO-220 Full-Pak' ],
