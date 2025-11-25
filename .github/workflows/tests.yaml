@@ -15,10 +15,11 @@ jobs:
         # https://github.com/shivammathur/setup-php#tada-php-support
         # https://www.php.net/supported-versions
         php-versions:
-        - '8.1'
+        - '8.1'  # Security Support Until 31 Dec 2025
         - '8.2'
         - '8.3'
         - '8.4'
+        - '8.5'
 
     steps:
     - name: Checkout
@@ -39,7 +40,7 @@ jobs:
       run: composer run coverage
 
     - name: Upload coverage results to Coveralls
-      if: matrix.php-versions == '8.0'
+      if: matrix.php-versions == '8.4'
       env:
         COVERALLS_REPO_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       run: |
