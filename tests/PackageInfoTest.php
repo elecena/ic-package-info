@@ -505,6 +505,11 @@ class PackageInfoTest extends TestCase {
 			// LoPAK
 			[ '5SNG 0900R120590 LoPak phase leg IGBT module', 'LoPak' ],
 			[ ' Tranzystor; IGBT; 1200V, 2x900A; -40 +125 st.C; LoPak', 'LoPak' ],
+
+			// T-Max
+			[ 'Tranzystor; IGBT; 600V; 135A; 600W; Field Stop; -55+175 st.C; THT; T-Max', 'T-Max' ],
+			[ 'Transistor: IGBT; PT; 600V; 96A; 833W; T-Max', 'T-Max' ],
+			[ 'Transistor: IGBT; Field Stop; 1.2kV; 99A; 833W; T-Max MICROCHIP TECHNOLOGY', 'T-Max' ],
 		];
 	}
 }
