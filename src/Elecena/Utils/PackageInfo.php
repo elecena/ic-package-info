@@ -173,6 +173,8 @@ class PackageInfo {
 			'TOP-?3D',
 			// ISO package
 			'ISO-?218',
+			// LoPak
+			'LOPAK',
 
 			// for normalization
 			'SC-?67',
@@ -335,6 +337,9 @@ class PackageInfo {
 
 				// http://www.taydaelectronics.com/1-5ke6v8-tvs-bidirectional-6-8v-1500w-cb429-do-201ad-1-5ke6v8ca.html
 				'CB429' => 'DO-201AD',
+
+				// normalize LoPak
+				'LOPAK' => 'LoPak',
 			];
 
 			if (array_key_exists($package, $normalizations)) {

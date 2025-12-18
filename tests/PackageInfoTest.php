@@ -501,6 +501,10 @@ class PackageInfoTest extends TestCase {
 			[ 'ADXL1003BCPZ-RL7 LFCSP-32', 'LFCSP-32'],
 			[ ' Układ Scalony Przetwornik A/C; CH:4; 24bit; 4.8kHz; bardzo niskiego szumu; 2.7-5.25V; -40+105 st.C; SMD; LFCSP32', 'LFCSP-32'],
 			[ 'Analog Devices ADM3307EACPZ Line Transceiver, 32-Pin LFCSP', 'LFCSP-32'],
+
+			// LoPAK
+			[ '5SNG 0900R120590 LoPak phase leg IGBT module', 'LoPak' ],
+			[ ' Tranzystor; IGBT; 1200V, 2x900A; -40 +125 st.C; LoPak', 'LoPak' ],
 		];
 	}
 }
