@@ -177,6 +177,9 @@ class PackageInfo {
 			'LOPAK',
 			'T-MAX',
 
+			// 2-16E3A
+			'2-16E3A',
+
 			// for normalization
 			'SC-?67',
 		];
@@ -283,6 +286,7 @@ class PackageInfo {
 				'TO-3' => 'TO-247',
 				'TO-3P' => 'TO-247',
 				'SOT429' => 'TO-247',
+				'2-16E3A' => 'TO-247',
 
 				// SOT-93 is a through-hole mount package between TO-220 and TO-247 in terms of package size | TO-218 / SOT-93
 				// @see http://www.psitechnologies.com/products/to218.php
