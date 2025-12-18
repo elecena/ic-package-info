@@ -151,7 +151,9 @@ class PackageInfoTest extends TestCase {
 			[ 'DC-DC Switching Buck Regulator, Adjustable, 4.5 V-18 Vin, 0.6 V-5 V/4 A out, 500 kHz, TSOT-23-8', 'TSOT23-8' ],
 			[ 'IC OPAMP VFB 90MHZ RRO TSOT-5', 'TSOT23-5' ],
 			[ 'IC BUFFER TRI-ST NON-INV SOT353', 'SOT23-5'],
+			[ 'Przetwornica DC/DC; boost; Vout: 1.8-5.5V; Vin: 0.65-5.5V; 0.4A; 500kHz; -40+85 st.C; SMD; SOT23-6L', 'SOT23-6L' ],
 			[ 'Dioda przełączająca BAV756S, 6-Pin, SMD, 90V, 250mA, 1MHz, -65 → +150°C, SOT-363', 'SOT23-6' ],
+			[ 'Przetwornica DC/DC; Vout: 0.8-26V; Vin: 4.5-40V; 600mA; 2MHz; -40+85 st.C; SMD; TSOT26', 'TSOT26' ],
 
 			[ 'TRANS NPN 80V 1A SOT-89', 'SOT89-3' ],
 			[ 'MOSFET, N CHANNEL, 300V, 0.2A, SOT-89-3' ,'SOT89-3' ],
@@ -171,6 +173,7 @@ class PackageInfoTest extends TestCase {
 			[ 'LDO VOLTAGE REGULATOR, 1.8V, 0.4A, SOT-223-6, FULL REEL', 'SOT223-6' ],
 			[ 'ZXMHC6A07T8TA N & P CHANNEL MOSFET, -60V, SM-8', 'SOT223-8' ],
 			[ 'MOSFET 2N-CH 60V 2A SOT-223-8', 'SOT223-8' ],
+			[ 'Super Junction MOSFET, C2, SOT-223-2L, 2,6A, 700V, 2,55Ohm , 4,6W , 30V, 3,3V, WAYON' , 'SOT223-2L' ],
 			[ 'Dioda: prostownicza; SMD; 70V; 200mA; 6ns; 200mW; SC70; Ifsm:500mA', 'SC70' ],
 			[ 'Dioda transil drabinka ESD 5,5V 2A SC70-3' ,'SOT23-3' ],
 			[ 'MOSFET Pch Power MOS FET SC-59A/TO-236AA', 'SOT23-3' ],
@@ -268,11 +271,6 @@ class PackageInfoTest extends TestCase {
 			// [ 'MCU 32-bit RX RX CISC 256KB Flash 3.3V/5V 64-Pin LQFP', 'LQFP64' ],
 			// [ 'MCU 16-bit RL78 CISC 256KB Flash 3.3V/5V 52-Pin LQFP Tray', 'LQFP52' ],
 
-			[ 'AD8353ACPZ IC, AMP, RF\/IF, SMD, LFCSP-8, 8353', 'LFCSP8' ],
-			[ 'ADP2503ACPZ-3.3-R7 DC/DC CONV, BUCK-BOOST, 2.5MHZ, LFCSP-10', 'LFCSP10' ],
-			[ 'ADXL325BCPZ Small, Low Power, 3-Axis +/-5 g Accelerometer, 16-LFCSP, Analog Devices, RoHS', 'LFCSP16' ],
-			[ '24-LFCSP-WQ (4x4)', 'LFCSP24-WQ' ],
-
 			[ '32-LQFP', 'LQFP32' ],
 			[ '44-LQFP', 'LQFP44' ],
 			[ '48-LQFP', 'LQFP48' ],
@@ -318,6 +316,12 @@ class PackageInfoTest extends TestCase {
 			[ 'DO-213AB (MELF, LL41)', 'DO-213AB' ],
 			[ 'DO-214AB, (SMC)', 'DO-214AB' ],
 
+			// IPAK
+			[ 'Super Junction MOSFET, M3, TO-251, 3A, 800V, 4Ohm , 29W , 30V, 3,3V, WAYON', 'TO-251' ],
+			[ 'MJD112-1G NPN Darlington Transistor, 2 A 100 V HFE:1000, 3-Pin IPAK (TO-251)', 'TO-251' ],
+			[ 'VISHAY IRFU9310PBF | Transistor: P-MOSFET; unipolar; -400V; -1.1A; 50W; IPAK', 'TO-251' ],
+
+			// DPAK
 			[ 'Tranzystor P-MOSFET 55V 18A DPAK TO-252', 'TO-252' ],
 			[ 'TO-252, (D-Pak)', 'TO-252' ],
 			[ 'D-Pak', 'TO-252' ],
@@ -488,6 +492,24 @@ class PackageInfoTest extends TestCase {
 
 			// ISO packages
 			[ 'BU2508D INCH 0410 ISO218', 'ISO218' ],
+
+			// LFCSP / Lead Frame Chip Scale Package
+			[ 'AD8353ACPZ IC, AMP, RF\/IF, SMD, LFCSP-8, 8353', 'LFCSP-8' ],
+			[ 'ADP2503ACPZ-3.3-R7 DC/DC CONV, BUCK-BOOST, 2.5MHZ, LFCSP-10', 'LFCSP-10' ],
+			[ 'ADXL325BCPZ Small, Low Power, 3-Axis +/-5 g Accelerometer, 16-LFCSP, Analog Devices, RoHS', 'LFCSP-16' ],
+			[ '24-LFCSP-WQ (4x4)', 'LFCSP24-WQ' ],
+			[ 'ADXL1003BCPZ-RL7 LFCSP-32', 'LFCSP-32'],
+			[ ' Układ Scalony Przetwornik A/C; CH:4; 24bit; 4.8kHz; bardzo niskiego szumu; 2.7-5.25V; -40+105 st.C; SMD; LFCSP32', 'LFCSP-32'],
+			[ 'Analog Devices ADM3307EACPZ Line Transceiver, 32-Pin LFCSP', 'LFCSP-32'],
+
+			// LoPAK
+			[ '5SNG 0900R120590 LoPak phase leg IGBT module', 'LoPak' ],
+			[ ' Tranzystor; IGBT; 1200V, 2x900A; -40 +125 st.C; LoPak', 'LoPak' ],
+
+			// T-Max
+			[ 'Tranzystor; IGBT; 600V; 135A; 600W; Field Stop; -55+175 st.C; THT; T-Max', 'T-Max' ],
+			[ 'Transistor: IGBT; PT; 600V; 96A; 833W; T-Max', 'T-Max' ],
+			[ 'Transistor: IGBT; Field Stop; 1.2kV; 99A; 833W; T-Max MICROCHIP TECHNOLOGY', 'T-Max' ],
 		];
 	}
 }
