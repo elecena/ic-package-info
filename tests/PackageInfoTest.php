@@ -321,6 +321,12 @@ class PackageInfoTest extends TestCase {
 			[ 'DO-213AB (MELF, LL41)', 'DO-213AB' ],
 			[ 'DO-214AB, (SMC)', 'DO-214AB' ],
 
+			// IPAK
+			[ 'Super Junction MOSFET, M3, TO-251, 3A, 800V, 4Ohm , 29W , 30V, 3,3V, WAYON', 'TO-251' ],
+			[ 'MJD112-1G NPN Darlington Transistor, 2 A 100 V HFE:1000, 3-Pin IPAK (TO-251)', 'TO-251' ],
+			[ 'VISHAY IRFU9310PBF | Transistor: P-MOSFET; unipolar; -400V; -1.1A; 50W; IPAK', 'TO-251' ],
+
+			// DPAK
 			[ 'Tranzystor P-MOSFET 55V 18A DPAK TO-252', 'TO-252' ],
 			[ 'TO-252, (D-Pak)', 'TO-252' ],
 			[ 'D-Pak', 'TO-252' ],
