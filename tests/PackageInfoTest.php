@@ -173,6 +173,7 @@ class PackageInfoTest extends TestCase {
 			[ 'LDO VOLTAGE REGULATOR, 1.8V, 0.4A, SOT-223-6, FULL REEL', 'SOT223-6' ],
 			[ 'ZXMHC6A07T8TA N & P CHANNEL MOSFET, -60V, SM-8', 'SOT223-8' ],
 			[ 'MOSFET 2N-CH 60V 2A SOT-223-8', 'SOT223-8' ],
+			[ 'Super Junction MOSFET, C2, SOT-223-2L, 2,6A, 700V, 2,55Ohm , 4,6W , 30V, 3,3V, WAYON' , 'SOT223-2L' ],
 			[ 'Dioda: prostownicza; SMD; 70V; 200mA; 6ns; 200mW; SC70; Ifsm:500mA', 'SC70' ],
 			[ 'Dioda transil drabinka ESD 5,5V 2A SC70-3' ,'SOT23-3' ],
 			[ 'MOSFET Pch Power MOS FET SC-59A/TO-236AA', 'SOT23-3' ],

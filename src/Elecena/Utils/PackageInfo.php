@@ -110,7 +110,7 @@ class PackageInfo {
 			// The SOT-227, or sometimes referred to as the ISOTOP® package
 			'(SOT-?227(B|-4)?)|ISOTOP',
 			// https://en.wikipedia.org/wiki/Small-outline_transistor#SOT223_.28.3DSOT223-4.29 / http://www.nxp.com/packages/SOT223
-			'SOT-?223-?(3|4|5|6|8)?',
+			'SOT-?223-?(2|3|4|5|6|8)?L?',
 			'(SC-?73)|(TO-?261AA)|(SM-?8)',
 			// https://en.wikipedia.org/wiki/Small-outline_transistor#SOT89-3
 			'SOT?-89-?(3|4|5)?',
