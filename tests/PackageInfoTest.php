@@ -63,6 +63,11 @@ class PackageInfoTest extends TestCase {
 			[ 'TRANS NPN DARL 400V 15A TO-247-3', 'TO-247-3' ],
 			[ 'TRANSISTOR, BIPOLAR, NPN, 600V, 96A, TO-247AC', 'TO-247AC' ],
 			[ 'DIODE SCHOTTKY 40A 200V TO-247AD', 'TO-247AD' ],
+			// 2-16E3A aka TO-247
+			[ '2SD2498 (2-16E3A)', 'TO-247' ],
+			[ 'Tranzystor; Toshiba; 2SD2499 ; Napięcie kolektor-emiter, 600V ; Moc, 50W ; Częstotliwość, 2MHz ; Obudowa, 2-16E3A', 'TO-247' ],
+			[ 'Transistor, NPN. Max voltage: 700VCEO 1700VCBO. Max current: 10Amp. Dissipation: 50 watt. Package: TO-247 (2-16E3A). New, bulk packaged. P/N: 2SC5150', 'TO-247' ],
+
 			[ 'IGBT 600V 24A 54W TO-3PF', 'TO-3PF' ],
 			[ '2SK2313 TOSHIBA K2313 Transistor MOSFET N-CH 60V 60A TO-3PN', 'TO-3PN' ],
 			[ 'IRFP460C Tranzystor 235W TO-3PN N-Channel', 'TO-3PN' ],
