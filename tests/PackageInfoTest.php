@@ -151,7 +151,9 @@ class PackageInfoTest extends TestCase {
 			[ 'DC-DC Switching Buck Regulator, Adjustable, 4.5 V-18 Vin, 0.6 V-5 V/4 A out, 500 kHz, TSOT-23-8', 'TSOT23-8' ],
 			[ 'IC OPAMP VFB 90MHZ RRO TSOT-5', 'TSOT23-5' ],
 			[ 'IC BUFFER TRI-ST NON-INV SOT353', 'SOT23-5'],
+			[ 'Przetwornica DC/DC; boost; Vout: 1.8-5.5V; Vin: 0.65-5.5V; 0.4A; 500kHz; -40+85 st.C; SMD; SOT23-6L', 'SOT23-6L' ],
 			[ 'Dioda przełączająca BAV756S, 6-Pin, SMD, 90V, 250mA, 1MHz, -65 → +150°C, SOT-363', 'SOT23-6' ],
+			[ 'Przetwornica DC/DC; Vout: 0.8-26V; Vin: 4.5-40V; 600mA; 2MHz; -40+85 st.C; SMD; TSOT26', 'TSOT26' ],
 
 			[ 'TRANS NPN 80V 1A SOT-89', 'SOT89-3' ],
 			[ 'MOSFET, N CHANNEL, 300V, 0.2A, SOT-89-3' ,'SOT89-3' ],

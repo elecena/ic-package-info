@@ -97,7 +97,7 @@ class PackageInfo {
 			// Quad Flat Package / https://en.wikipedia.org/wiki/Quad_Flat_Package
 			'(BQFP|BQFPH|CQFP|EQFP|FQFP|LQFP|MQFP|NQFP|SQFP|TDFP|TQFP|VQFP|VTQFP|HTQFP)[- ]?(4|5|6|8|10|14|16|20|24|28|32|38|40|44|48|52|56|64|68|80|100|112|120|128|144|176|208)',
 			// https://en.wikipedia.org/wiki/Small-outline_transistor / Many manufacturers[1][2] also offer the nearly identical thin small outline transistor (TSOT)
-			'T?SOT-?23-?(3|5|6|8)?',
+			'T?SOT-?(23|26)-?(3|5|6|8)?L?',
 			'SC-?70-?(3|4|5|6)?',
 			'SOT-?416FL',
 			'EMT3F',
