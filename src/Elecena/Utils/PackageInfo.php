@@ -36,6 +36,9 @@ class PackageInfo {
 		// 24 ld QFN -> 24-QFN
 		$desc = preg_replace('#(\d+) LD ([A-Z]+)#', '$1-$2', $desc);
 
+		// 32-Pin LFCSP -> LFCSP-32
+		$desc = preg_replace('#(\d+)(-?pin) LFCSP#i', 'LFCSP-$1', $desc);
+
 		// "swap" package signatures / 64-LQFP -> LQFP64
 		$desc = preg_replace('#(\d+)-\s?([2A-Z]{3,})#', '$2$1', $desc);
 
@@ -311,6 +314,12 @@ class PackageInfo {
 				'TO-2206' => 'TO-220-6',
 				'TO-2207' => 'TO-220-7',
 				'TO-220F4' => 'TO-220F-4',
+
+				// LFCSP
+				'LFCSP8' => 'LFCSP-8',
+				'LFCSP10' => 'LFCSP-10',
+				'LFCSP16' => 'LFCSP-16',
+				'LFCSP32' => 'LFCSP-32',
 
 				// Pentawatt
 				'PENTAWATTV' => 'PENTAWATT-V',

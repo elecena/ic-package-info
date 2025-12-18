@@ -271,11 +271,6 @@ class PackageInfoTest extends TestCase {
 			// [ 'MCU 32-bit RX RX CISC 256KB Flash 3.3V/5V 64-Pin LQFP', 'LQFP64' ],
 			// [ 'MCU 16-bit RL78 CISC 256KB Flash 3.3V/5V 52-Pin LQFP Tray', 'LQFP52' ],
 
-			[ 'AD8353ACPZ IC, AMP, RF\/IF, SMD, LFCSP-8, 8353', 'LFCSP8' ],
-			[ 'ADP2503ACPZ-3.3-R7 DC/DC CONV, BUCK-BOOST, 2.5MHZ, LFCSP-10', 'LFCSP10' ],
-			[ 'ADXL325BCPZ Small, Low Power, 3-Axis +/-5 g Accelerometer, 16-LFCSP, Analog Devices, RoHS', 'LFCSP16' ],
-			[ '24-LFCSP-WQ (4x4)', 'LFCSP24-WQ' ],
-
 			[ '32-LQFP', 'LQFP32' ],
 			[ '44-LQFP', 'LQFP44' ],
 			[ '48-LQFP', 'LQFP48' ],
@@ -497,6 +492,15 @@ class PackageInfoTest extends TestCase {
 
 			// ISO packages
 			[ 'BU2508D INCH 0410 ISO218', 'ISO218' ],
+
+			// LFCSP / Lead Frame Chip Scale Package
+			[ 'AD8353ACPZ IC, AMP, RF\/IF, SMD, LFCSP-8, 8353', 'LFCSP-8' ],
+			[ 'ADP2503ACPZ-3.3-R7 DC/DC CONV, BUCK-BOOST, 2.5MHZ, LFCSP-10', 'LFCSP-10' ],
+			[ 'ADXL325BCPZ Small, Low Power, 3-Axis +/-5 g Accelerometer, 16-LFCSP, Analog Devices, RoHS', 'LFCSP-16' ],
+			[ '24-LFCSP-WQ (4x4)', 'LFCSP24-WQ' ],
+			[ 'ADXL1003BCPZ-RL7 LFCSP-32', 'LFCSP-32'],
+			[ ' Układ Scalony Przetwornik A/C; CH:4; 24bit; 4.8kHz; bardzo niskiego szumu; 2.7-5.25V; -40+105 st.C; SMD; LFCSP32', 'LFCSP-32'],
+			[ 'Analog Devices ADM3307EACPZ Line Transceiver, 32-Pin LFCSP', 'LFCSP-32'],
 		];
 	}
 }
